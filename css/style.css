@@ -1,0 +1,429 @@
+
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+:root{
+
+	--color-tiffany: #1F618D;
+	--timeline-circle-theme: #1F618D;
+}
+
+body{
+	width: 100%;
+	height: 100%;
+	padding: 20px 10px 20px 10px;
+}
+
+/* ================ The Header Section ================ */
+
+.nav img{
+	width: 100%;
+}
+
+.Name_sec h2{
+	font-size: 35px;
+	font-weight: 700;
+	margin-top: 45px;
+}
+.Name_sec p{
+	font-size: 25px;
+	color: #1F618D;
+	font-weight: 600;
+	margin-top: 10px;
+}
+
+/*==================== MEDIA QUERIES ====================*/
+
+@media (max-width: 767px) {
+  .nav img{
+	width: 50%;
+	margin-left: 90px;
+  }
+  .Name_sec h2{
+	font-size: 30px;
+	margin-top: 20px;
+	text-align: center;
+  }
+  .Name_sec p{
+  	text-align: center;
+  	font-size: 16px;
+  }
+
+}
+
+/* ================ The Header Social Links Section ================ */
+
+.social_img img{
+	width: 40%;
+	height: 20%;
+	float: right;
+}
+
+.social-links{
+	margin-top: 12px;
+}
+
+.social-links p{
+	font-size: 16px;
+	font-weight: 500;
+	line-height: 12px;
+	text-align: right;
+	margin-right: -60px;
+}
+.social-links a{
+	color: #000;
+	text-decoration: none;
+}
+
+/*==================== MEDIA QUERIES ====================*/
+
+@media (max-width: 767px) {
+  .social_img img{
+	width: 15%;
+	height: 15%;
+	float: left;
+	margin-left: 0px!important;
+	margin-top: -65%;
+  }
+  .social-links p{
+	font-size: 16px;
+	font-weight: 500;
+	line-height: 28px;
+	text-align: left;
+	margin-left: 70px;
+}
+
+}
+
+
+/* ================ The Summary Section ================ */
+
+.summary{
+	margin: 40px 0 40px 0;
+}
+
+.summary p{
+	font-size: 16px;
+	font-weight: 500;
+}
+
+
+/* ================ The Education Section ================ */
+
+.education h2{
+	font-size: 28px;
+	font-weight: 700;
+}
+
+
+.education ul, li{
+	font-size: 16px;
+	color: #000;
+	font-weight: 600;
+}
+.education span{
+	font-size: 16px;
+	font-weight: 400;
+	color: #212121;
+}
+
+.education p{
+	font-size: 16px;
+	color: #000;
+	font-weight: 600;
+}
+
+
+/* ================ The Professional Summary Section ================ */
+
+.professional_summary h2{
+	font-size: 28px;
+	font-weight: 700;
+}
+.professional_summary ul, li{
+	font-size: 16px;
+	color: #000;
+	font-weight: 600;
+}
+
+
+/* ================ The Technical Skills Section ================ */
+
+
+.skills_items{
+	display: flex;
+}
+.skills_name p{
+	font-size: 16px;
+	font-weight: 600;
+}
+
+.skills_name{
+	width: 50%;
+	text-align: left;
+}
+
+.skills_level{
+	width: 49%;
+	text-align: right;
+}
+
+.skills_level .skills_name {
+   vertical-align: top;
+   display: inline-block;
+}
+.skills_level input{
+	display: none;
+}
+.skills_level label {
+	display: inline-block;
+	width: 10px;
+	height: 20px;
+    background: #85C1E9;
+	border-radius: 5px;
+    margin-right:  3px;
+}
+.skills_level input:checked + label {
+  background: #1F618D;
+}
+
+/*==================== MEDIA QUERIES ====================*/
+
+@media (max-width: 767px) {
+.skills_name p{
+	font-size: 16px;
+	font-weight: 600;
+}
+.skills_name{
+	width: 50%;
+	text-align: left;
+}
+
+.skills_level{
+	width: 49%;
+	text-align: right;
+}
+
+.skills_level .skills_name {
+   vertical-align: top;
+   display: inline-block;
+}
+.skills_level input{
+	display: none;
+}
+.skills_level label {
+	display: inline-block;
+	width: 8px;
+	height: 20px;
+    background: #85C1E9;
+	border-radius: 5px;
+    margin-right:  3px;
+}
+.skills_level input:checked + label {
+  background: #1F618D;
+}
+
+}
+
+/* ================ The Soft Skills Section ================ */
+
+
+.soft_skills_box{
+	width: 100%;
+	height: 40px;
+	padding: 10px;
+	font-size: 14px;
+	text-align: center;
+	color: #fff;
+	background: #1F618D;
+	border-radius: 5px;
+}
+
+/*==================== MEDIA QUERIES ====================*/
+
+@media (max-width: 767px) {
+.soft_skills_box{
+	width: 100%;
+	height: 40px;
+	padding: 10px;
+	font-size: 14px;
+	text-align: center;
+	color: #fff;
+	background: #1F618D;
+	border-radius: 5px;
+	gap: 20px;
+}
+
+}
+
+
+/* ================ The Work Experience Timeline Section ================ */
+
+/* time line block in Work Experience section */
+.timeline-block h3{
+	font-size: 14px;
+	font-weight: 500;
+	color: #FFF;
+	width: 160px;
+	height: 40px;
+	padding: 10px;
+	margin-bottom: 20px;
+	text-align: center;
+	background: #1F618D;
+}
+.timeline-block {
+	position: relative;
+	padding-left: 30px;
+}
+.timeline-block:not(:last-of-type) {
+	margin-bottom: 1rem;	
+}
+.timeline-block h1 {
+	font-size: 20px;
+	font-weight: bolder;
+	margin: 10px 0;
+	transition: all 0.3s;
+}
+.timeline-block span{
+	font-weight: 500;
+}
+.timeline-block h4 {
+	font-size: 16px;
+	font-weight: bold;
+	margin: 15px 0 5px 0;
+}
+
+.timeline-block::before {
+	position: absolute;
+	content: '';
+	width: 20px;
+	height: 20px;
+	background-color: white;
+	border: 4px solid var(--timeline-circle-theme);
+	border-radius: 50%;
+	left: -8px;
+	top: 6px;	
+}
+
+.timeline-block::after {
+	position: absolute;
+	content: '';
+	width: 4px;
+	height: 100%;
+	background-color: var(--timeline-circle-theme);
+	left: -1px;
+	top: 22px;
+}
+
+
+.timeline-block:hover h1 {
+	color: var(--color-tiffany);
+}
+.timeline-block:hover::before {
+	animation: circle 1.2s infinite;
+}
+
+@keyframes circle {
+  0% {
+    box-shadow: 0 0 0 0px rgba(51, 52, 57, 1);
+  }
+  100% {
+    box-shadow: 0 0 0 6px rgba(51, 52, 57, 0);
+  }
+}
+
+
+/* ================ The Career Timeline Section ================ */
+
+
+.timeline-content:before,
+.timeline-content:after{
+    content: '';
+    background: #1F618D;
+    width: 25%;
+    height: 50px;
+    border-radius: 0 15px 15px 15px;
+    position: absolute;
+    left: 55px;
+    right: 20px;
+    top: -3px;
+    z-index: -1;
+}
+.timeline-content:before{
+    background: linear-gradient(to right bottom, transparent 50%, #2980B9 52%);
+    height: 20px;
+    width: 15px;
+    border-radius: 0;
+    left: 40px;
+    top: -4px;
+    right: auto;
+}
+
+.career_description{
+	font-size: 16px;
+	color: #FFF;
+	font-weight: 500;
+	margin-left: 60px;
+	margin-top: 8px;
+}
+.career_descrip h2{
+    font-size: 20px;
+    font-weight: 700;
+    margin: 0 0 0 -25px;   
+}
+.career_descrip p{
+	font-size: 14px;
+	font-weight: 500;
+	margin: 0px 0 0 -25px;
+}
+
+/*==================== MEDIA QUERIES ====================*/
+
+@media (max-width: 767px) {
+.timeline-content:before,
+.timeline-content:after{
+    content: '';
+    background: #1F618D;
+    width: 80%;
+    height: 50px;
+    border-radius: 0 15px 15px 15px;
+    position: absolute;
+    left: 55px;
+    right: 20px;
+    top: -3px;
+    z-index: -1;
+}
+.timeline-content:before{
+    background: linear-gradient(to right bottom, transparent 50%, #2980B9 52%);
+    height: 20px;
+    width: 15px;
+    border-radius: 0;
+    left: 40px;
+    top: -4px;
+    right: auto;
+}
+.career_description{
+	font-size: 16px;
+	color: #FFF;
+	font-weight: 500;
+	margin-left: 90px;
+	margin-top: 8px;
+}
+.career_descrip h2{
+    font-size: 18px;
+    font-weight: 700;
+    margin: 10px 0 0 25px;   
+}
+.career_descrip p{
+	font-size: 14px;
+	font-weight: 500;
+	margin: 0px 0 0 25px;
+}
+
+
+}
+
+
