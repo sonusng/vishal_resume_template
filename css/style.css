@@ -307,6 +307,16 @@ body{
 	left: -8px;
 	top: 6px;	
 }
+.right::before {
+	position: absolute;
+	content: '';
+	width: 22px;
+	height: 0;
+	background-color: white;
+	left: 10px;
+	top: 15px;
+	border: 1px solid #1F618D;
+}
 
 .timeline-block::after {
 	position: absolute;
@@ -360,6 +370,17 @@ body{
     left: 40px;
     top: -4px;
     right: auto;
+}
+
+.right2::before {
+	position: absolute;
+	content: '';
+	width: 45px;
+	height: 0;
+	background-color: white;
+	left: 10px;
+	top: 15px;
+	border: 1px solid #1F618D;
 }
 
 .career_description{
